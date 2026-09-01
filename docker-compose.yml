@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: bordados_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: bordados_eliseo
+      POSTGRES_PASSWORD: bordadoseliseo115
+      POSTGRES_DB: bordados_shop
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bordados_eliseo -d bordados_shop"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
