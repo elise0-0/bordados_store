@@ -1,7 +1,7 @@
-node_modules/.
+node_modules/
+bordados-tienda/client/node_modules/
+bordados-tienda/server/node_modules/
+.env
 
-server/.env.
+.windsurf
 
-.windsurf/  
-
-README.md
