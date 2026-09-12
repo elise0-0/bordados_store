@@ -1,7 +1,3 @@
-node_modules/
-bordados-tienda/client/node_modules/
-bordados-tienda/server/node_modules/
 .env
-
+node_modules/
 .windsurf
-
